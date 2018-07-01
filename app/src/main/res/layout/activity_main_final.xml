@@ -281,48 +281,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_1_correct"
-                android:textStyle="italic"
-                android:onClick="questionFiveAnswer" />
+                android:textStyle="italic" />
 
             <CheckBox
                 android:id="@+id/questionFiveAnswerTwoCheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_2"
-                android:textStyle="italic"
-                android:onClick="questionFiveAnswer" />
+                android:textStyle="italic" />
 
             <CheckBox
                 android:id="@+id/questionFiveAnswerThreeCheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_3"
-                android:textStyle="italic"
-                android:onClick="questionFiveAnswer" />
+                android:textStyle="italic" />
 
             <CheckBox
                 android:id="@+id/questionFiveAnswerFourCheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_4_correct"
-                android:textStyle="italic"
-                android:onClick="questionFiveAnswer" />
+                android:textStyle="italic" />
 
             <CheckBox
                 android:id="@+id/questionFiveAnswerFiveCheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_5"
-                android:textStyle="italic"
-                android:onClick="questionFiveAnswer" />
+                android:textStyle="italic" />
 
             <CheckBox
                 android:id="@+id/questionFiveAnswerSixCheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_5_answer_6_correct"
-                android:textStyle="italic"
-                android:onClick="questionFiveAnswer" />
+                android:textStyle="italic" />
         </LinearLayout>
 
         <LinearLayout
@@ -352,40 +346,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_1"
-                    android:textStyle="italic"
-                    android:onClick="questionSixAnswer" />
+                    android:textStyle="italic" />
 
                 <RadioButton
                     android:id="@+id/questionSixAnswerTwoRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_2"
-                    android:textStyle="italic"
-                    android:onClick="questionSixAnswer" />
+                    android:textStyle="italic" />
 
                 <RadioButton
                     android:id="@+id/questionSixAnswerThreeRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_3"
-                    android:textStyle="italic"
-                    android:onClick="questionSixAnswer" />
+                    android:textStyle="italic" />
 
                 <RadioButton
                     android:id="@+id/questionSixAnswerFourRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_4_correct"
-                    android:textStyle="italic"
-                    android:onClick="questionSixAnswer" />
+                    android:textStyle="italic" />
 
                 <RadioButton
                     android:id="@+id/questionSixAnswerFiveRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_6_answer_5"
-                    android:textStyle="italic"
-                    android:onClick="questionSixAnswer" />
+                    android:textStyle="italic" />
             </RadioGroup>
         </LinearLayout>
 
@@ -463,32 +452,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_8_answer_1"
-                    android:textStyle="italic"
-                    android:onClick="questionEightAnswer" />
+                    android:textStyle="italic" />
 
                 <RadioButton
                     android:id="@+id/questionEightAnswerTwoRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_8_answer_2_correct"
-                    android:textStyle="italic"
-                    android:onClick="questionEightAnswer" />
+                    android:textStyle="italic" />
 
                 <RadioButton
                     android:id="@+id/questionEightAnswerThreeRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_8_answer_3"
-                    android:textStyle="italic"
-                    android:onClick="questionEightAnswer" />
+                    android:textStyle="italic" />
 
                 <RadioButton
                     android:id="@+id/questionEightAnswerFourRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/question_8_answer_4"
-                    android:textStyle="italic"
-                    android:onClick="questionEightAnswer" />
+                    android:textStyle="italic" />
             </RadioGroup>
         </LinearLayout>
 
@@ -569,8 +554,8 @@
             android:id="@+id/submitButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:onClick="submitButton" />
+            android:text="Reset"
+            android:onClick="resetButton" />
 
     </LinearLayout>
 

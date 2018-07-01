@@ -1,5 +1,6 @@
 package quizapp.samburu.com.quizapp;
 
+
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,49 +23,99 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void submitButton(View v) {
-
-        LinearLayout backgroundQuestionOne = findViewById(R.id.questionOneLinearLayout);
-        LinearLayout backgroundQuestionTwo = findViewById(R.id.questionTwoLinearLayout);
-        LinearLayout backgroundQuestionThree = findViewById(R.id.questionThreeLinearLayout);
-        LinearLayout backgroundQuestionFour = findViewById(R.id.questionFourLinearLayout);
-        LinearLayout backgroundQuestionFive = findViewById(R.id.questionFiveLinearLayout);
-        LinearLayout backgroundQuestionSix = findViewById(R.id.questionSixLinearLayout);
-        LinearLayout backgroundQuestionSeven = findViewById(R.id.questionSevenLinearLayout);
-        LinearLayout backgroundQuestionEight = findViewById(R.id.questionEightLinearLayout);
-        LinearLayout backgroundQuestionNine = findViewById(R.id.questionNineLinearLayout);
-        LinearLayout backgroundQuestionTen = findViewById(R.id.questionTenLinearLayout);
+    public void submitButton(View view) {
+        questionSevenAnswer();
+        questionNineAnswer();
         count = questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen;
         int result = count;
         Toast displayResultToast = Toast.makeText(this, "Your score is: " + result + " out of 10", Toast.LENGTH_LONG);
         displayResultToast.show();
+        if (questionOne == 1) {
+            LinearLayout questionOneLayout = findViewById(R.id.questionOneLinearLayout);
+            questionOneLayout.setBackgroundColor(0x00ff000);
+        } else if (questionOne == 0) {
+            LinearLayout questionOneLayout = findViewById(R.id.questionOneLinearLayout);
+            questionOneLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionTwo == 1) {
+            LinearLayout questionTwoLayout = findViewById(R.id.questionTwoLinearLayout);
+            questionTwoLayout.setBackgroundColor(0x00ff000);
+        } else if (questionTwo == 0) {
+            LinearLayout questionTwoLayout = findViewById(R.id.questionTwoLinearLayout);
+            questionTwoLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionThree == 1) {
+            LinearLayout questionThreeLayout = findViewById(R.id.questionThreeLinearLayout);
+            questionThreeLayout.setBackgroundColor(0x00ff000);
+        } else if (questionThree == 0) {
+            LinearLayout questionThreeLayout = findViewById(R.id.questionThreeLinearLayout);
+            questionThreeLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionFour == 1) {
+            LinearLayout questionFourLayout = findViewById(R.id.questionFourLinearLayout);
+            questionFourLayout.setBackgroundColor(0x00ff000);
+        } else if (questionFour == 0) {
+            LinearLayout questionFourLayout = findViewById(R.id.questionFourLinearLayout);
+            questionFourLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionFive == 1) {
+            LinearLayout questionFiveLayout = findViewById(R.id.questionFiveLinearLayout);
+            questionFiveLayout.setBackgroundColor(0x00ff000);
+        } else if (questionFive == 0) {
+            LinearLayout questionFiveLayout = findViewById(R.id.questionFiveLinearLayout);
+            questionFiveLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionSix == 1) {
+            LinearLayout questionSixLayout = findViewById(R.id.questionSixLinearLayout);
+            questionSixLayout.setBackgroundColor(0x00ff000);
+        } else if (questionSix == 0) {
+            LinearLayout questionSixLayout = findViewById(R.id.questionSixLinearLayout);
+            questionSixLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionSeven == 1) {
+            LinearLayout questionSevenLayout = findViewById(R.id.questionSevenLinearLayout);
+            questionSevenLayout.setBackgroundColor(0x00ff000);
+        } else if (questionSeven == 0) {
+            LinearLayout questionSevenLayout = findViewById(R.id.questionSevenLinearLayout);
+            questionSevenLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionEight == 1) {
+            LinearLayout questionEightLayout = findViewById(R.id.questionEightLinearLayout);
+            questionEightLayout.setBackgroundColor(0x00ff0000);
+        } else if (questionEight == 0) {
+            LinearLayout questionEightLayout = findViewById(R.id.questionEightLinearLayout);
+            questionEightLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionNine == 1) {
+            LinearLayout questionNineLayout = findViewById(R.id.questionNineLinearLayout);
+            questionNineLayout.setBackgroundColor(0x00ff0000);
+        } else if (questionNine == 0) {
+            LinearLayout questionNineLayout = findViewById(R.id.questionNineLinearLayout);
+            questionNineLayout.setBackgroundColor(0xff00000);
+        }
+        if (questionTen == 1) {
+            LinearLayout questionTenLayout = findViewById(R.id.questionTenLinearLayout);
+            questionTenLayout.setBackgroundColor(0x00ff000);
+        } else if (questionTen == 0) {
+            LinearLayout questionTenLayout = findViewById(R.id.questionTenLinearLayout);
+            questionTenLayout.setBackgroundColor(0xff00000);
+        }
     }
 
     public void questionOneAnswer(View view) {
 
 
-        // Is the button now checked?
-        boolean checked = ((RadioButton) view).isChecked();
+        RadioButton questionOneRadioButtonOne = findViewById(R.id.questionOneAnswerOneRadioButton);
+        RadioButton questionOneRadioButtonTwo = findViewById(R.id.questionOneAnswerTwoRadioButton);
+        RadioButton questionOneRadioButtonThree = findViewById(R.id.questionOneAnswerThreeRadioButton);
+        RadioButton questionOneRadioButtonFour = findViewById(R.id.questionOneAnswerFourRadioButton);
 
-        // Check which radio button was clicked
-        switch (view.getId()) {
-            case R.id.questionOneAnswerOneRadioButton:
-                if (checked)
-                    questionOne = 0;
-                break;
-            case R.id.questionOneAnswerTwoRadioButton:
-                if (checked)
-                    questionOne = 1;
-                break;
-            case R.id.questionOneAnswerThreeRadioButton:
-                if (checked)
-                    questionOne = 0;
-                break;
-            case R.id.questionOneAnswerFourRadioButton:
-                if (checked)
-                    questionOne = 0;
-                break;
+        if (questionOneRadioButtonTwo.isChecked()) {
+            questionOne = 1;
+        } else if (questionOneRadioButtonOne.isChecked() || questionOneRadioButtonThree.isChecked() || questionOneRadioButtonFour.isChecked()) {
+            questionOne = 0;
         }
+
 
     }
 
@@ -128,15 +179,49 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void questionSixAnswer(View view) {
+        RadioButton questionSixRadioButtonOne = findViewById(R.id.questionSixAnswerOneRadioButton);
+        RadioButton questionSixRadioButtonTwo = findViewById(R.id.questionSixAnswerTwoRadioButton);
+        RadioButton questionSixRadioButtonThree = findViewById(R.id.questionSixAnswerThreeRadioButton);
+        RadioButton questionSixRadioButtonFour = findViewById(R.id.questionSixAnswerFourRadioButton);
+        RadioButton questionSixRadioButtonFive = findViewById(R.id.questionSixAnswerFiveRadioButton);
+
+        if (questionSixRadioButtonFour.isChecked()) {
+            questionSix = 1;
+        } else if (questionSixRadioButtonOne.isChecked() || questionSixRadioButtonTwo.isChecked() || questionSixRadioButtonThree.isChecked() || questionSixRadioButtonFive.isChecked()) {
+            questionSix = 0;
+        }
     }
 
-    public void questionSevenAnswer(View view) {
+    public void questionSevenAnswer() {
+        //Create a new EditText variable, find and store the xml value into it
+        EditText questionSevenAnswer = findViewById(R.id.questionSevenAnswerEditText);
+        //Convert the typed answer from the EditText box in a new String variable
+        String typedAnswer = questionSevenAnswer.getText().toString().toLowerCase();
+        //Create a string variable to store the correct answer
+        String correctAnswer = "tethering";
+
+        if (typedAnswer.contains(correctAnswer)) {
+            questionSeven = 1;
+        } else
+            questionSeven = 0;
+
     }
 
     public void questionEightAnswer(View view) {
+        RadioButton questionEightRadioButtonOne = findViewById(R.id.questionEightAnswerOneRadioButton);
+        RadioButton questionEightRadioButtonTwo = findViewById(R.id.questionEightAnswerTwoRadioButton);
+        RadioButton questionEightRadioButtonThree = findViewById(R.id.questionEightAnswerThreeRadioButton);
+        RadioButton questionEightRadioButtonFour = findViewById(R.id.questionEightAnswerFourRadioButton);
+
+
+        if (questionEightRadioButtonTwo.isChecked()) {
+            questionEight = 1;
+        } else if (questionEightRadioButtonOne.isChecked() || questionEightRadioButtonThree.isChecked() || questionEightRadioButtonFour.isChecked()) {
+            questionEight = 0;
+        }
     }
 
-    public void questionNineAnswer(View view) {
+    public void questionNineAnswer() {
         //Create a new EditText variable, find and store the xml value into it
         EditText questionNineAnswer = findViewById(R.id.questionNineAnswerEditText);
         //Convert the typed answer from the EditText box in a new String variable
@@ -145,13 +230,24 @@ public class MainActivity extends AppCompatActivity {
         String correctAnswer = "multiple input multiple output";
 
 
-        if (typedAnswer.equalsIgnoreCase(correctAnswer)) {
+        if (typedAnswer.contains(correctAnswer)) {
             questionNine = 1;
         } else
             questionNine = 0;
     }
 
-    public void questionTenAnswer() {
+    public void questionTenAnswer(View view) {
+        RadioButton questionTenRadioButtonOne = findViewById(R.id.questionTenAnswerOneRadioButton);
+        RadioButton questionTenRadioButtonTwo = findViewById(R.id.questionTenAnswerTwoRadioButton);
+        RadioButton questionTenRadioButtonThree = findViewById(R.id.questionTenAnswerThreeRadioButton);
+        RadioButton questionTenRadioButtonFour = findViewById(R.id.questionTenAnswerFourRadioButton);
+
+
+        if (questionTenRadioButtonFour.isChecked()) {
+            questionTen = 1;
+        } else if (questionTenRadioButtonOne.isChecked() || questionTenRadioButtonTwo.isChecked() || questionTenRadioButtonThree.isChecked()) {
+            questionTen = 0;
+        }
     }
 
 
