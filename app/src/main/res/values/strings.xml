@@ -3,32 +3,32 @@
 
     <string name="appTitle">Wireless Networking Quiz</string>
     <string name="intro">Welcome to </string>
-    <string name="question_1">An administrator wishes to extend the range of the existing IEEE 802.11n network without changing the AP. What can the administrator do to accomplish this?</string>
+    <string name="question_1">1. An administrator wishes to extend the range of the existing IEEE 802.11n network without changing the AP. What can the administrator do to accomplish this?</string>
     <string name="question_1_answer_1">Change to WPA2 authentication.</string>
-    <string name="question_1_answer_2_correct">Deploy a Wi-Fi Range Extender.*</string>
+    <string name="question_1_answer_2_correct">Deploy a Wi-Fi Range Extender.</string>
     <string name="question_1_answer_3">Split the wireless traffic between the 802.11n 2.4 GHz band and the 5 GHz band.</string>
     <string name="question_1_answer_4">Upgrade the firmware on the AP.</string>
 
-    <string name="question_2">Which security mode is the least secure choice when a home wireless router is configured?</string>
+    <string name="question_2">2. Which security mode is the least secure choice when a home wireless router is configured?</string>
     <string name="question_2_answer_1">WPA</string>
     <string name="question_2_answer_2">WPA2-Personal</string>
     <string name="question_2_answer_3_correct">WEP</string>
     <string name="question_2_answer_4">WPA2-Enterprise</string>
 
-    <string name="question_3">Which two roles are typically performed by a wireless router that is used in a home or small business? (Choose two.)</string>
+    <string name="question_3">3. Which two roles are typically performed by a wireless router that is used in a home or small business? (Choose two.)</string>
     <string name="question_3_answer_1">RADIUS authentication server</string>
     <string name="question_3_answer_2">repeater</string>
     <string name="question_3_answer_3_correct">access point</string>
     <string name="question_3_answer_4">WLAN controller</string>
     <string name="question_3_answer_5_correct">Ethernet switch</string>
 
-    <string name="question_4">Which organization certifies vendors for adherence to the 802.11 standards to improve interoperability of 802.11 products?</string>
+    <string name="question_4">4. Which organization certifies vendors for adherence to the 802.11 standards to improve interoperability of 802.11 products?</string>
     <string name="question_4_answer_1">IEEE</string>
     <string name="question_4_answer_2">FCC</string>
     <string name="question_4_answer_3">ITU-R</string>
     <string name="question_4_answer_4_correct">Wi-Fi Alliance</string>
 
-    <string name="question_5">If three 802.11b access points need to be deployed in close proximity, which three frequency channels should be used? (Choose three.)</string>
+    <string name="question_5">5. If three 802.11b access points need to be deployed in close proximity, which three frequency channels should be used? (Choose three.)</string>
     <string name="question_5_answer_1_correct">1</string>
     <string name="question_5_answer_2">3</string>
     <string name="question_5_answer_3">5</string>
@@ -36,32 +36,33 @@
     <string name="question_5_answer_5">8</string>
     <string name="question_5_answer_6_correct">11</string>
 
-    <string name="question_6">During which stage of establishing connectivity between a WLAN client and an AP does the client learn the MAC address of the AP?</string>
+    <string name="question_6">6. During which stage of establishing connectivity between a WLAN client and an AP does the client learn the MAC address of the AP?</string>
     <string name="question_6_answer_1">encryption</string>
     <string name="question_6_answer_2">authentication</string>
     <string name="question_6_answer_3">discovery</string>
-    <string name="question_6_answer_4_correct">association*</string>
+    <string name="question_6_answer_4_correct">association</string>
     <string name="question_6_answer_5">probing</string>
 
-    <string name="question_7_instructions">Fill in the blank. Do not use abbreviations.</string>
+    <string name="question_7_instructions">7. Fill in the blank. Do not use abbreviations.</string>
     <string name="question_7_a">Ad hoc wireless topologies sometimes can use a feature called</string>
     <string name="question_7_b">to enable a smartphone to create a personal hotspot.</string>
     <string name="question_7_answer_correct">tethering</string>
+    <string name="hint">type here</string>
 
-    <string name="question_8">Which type of management frame may regularly be broadcast by an AP?</string>
+    <string name="question_8">8. Which type of management frame may regularly be broadcast by an AP?</string>
     <string name="question_8_answer_1">authentication</string>
-    <string name="question_8_answer_2_correct">beacon*</string>
+    <string name="question_8_answer_2_correct">beacon</string>
     <string name="question_8_answer_3">probe response</string>
     <string name="question_8_answer_4">probe request</string>
 
-    <string name="question_9">What does MIMO stand for</string>
+    <string name="question_9">9. What does MIMO stand for?</string>
     <string name="question_9_answer">Multiple Input Multiple Output</string>
 
-    <string name="question_10">What is the purpose of the Distributed Coordination Function in an IEEE 802.11 WLAN environment?</string>
+    <string name="question_10">10. What is the purpose of the Distributed Coordination Function in an IEEE 802.11 WLAN environment?</string>
     <string name="question_10_answer_1">It allows the client to change transmission channels.</string>
     <string name="question_10_answer_2">It is used to send data over a half-duplex connection.</string>
     <string name="question_10_answer_3">It is used in a full-duplex environment to detect collisions.</string>
-    <string name="question_10_answer_4_correct">It allows a client to detect whether or not a channel is clear prior to transmission.*</string>
+    <string name="question_10_answer_4_correct">It allows a client to detect whether or not a channel is clear prior to transmission.</string>
 
 
 </resources>
