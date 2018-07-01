@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
+
     //Question One and its answers pulled from resources and stored in string variables
     String questionOne = getResources().getString(R.string.question_1);
     String questionOneAnswerOne = getResources().getString(R.string.question_1_answer_1);
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     String questionFourAnswerOne = getResources().getString(R.string.question_4_answer_1);
     String questionFourAnswerTwo = getResources().getString(R.string.question_4_answer_2);
     String questionFourAnswerThree = getResources().getString(R.string.question_4_answer_3);
-    String questionFourAnswerFour = getResources().getString(R.string.question_4_answer_4_correct;
+    String questionFourAnswerFour = getResources().getString(R.string.question_4_answer_4_correct);
 
     //Question Five and its answers pulled from resources and stored in string variables
     String questionFive = getResources().getString(R.string.question_5);
